@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.page-wrapper {
+    width: 1200px;
+}
+
+.page-header {
+    height: 550px;
+
+    background-color: rgb(255, 203, 120);
+    background-image: url("./img/wheat-back.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+
+.header-top {
+    width: 800px;
+
+     display: flex;
+     justify-content: space-between;
+
+     margin: 0 auto;
+     padding-top: 60px;
+}
+
+.header-logo img{
+    width: 140px;
+    height: 76px;
+}
+
+.main-nav__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+
+    width: 600px;
+    min-height: 58px;
+
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid rgb(141, 110, 59, 0.8);
+    border-bottom: 1px solid rgb(141, 110, 59, 0.8);
+}
+
+.main-nav li {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.main-nav a:hover {
+    color: rgb(255, 203, 120);
+    text-decoration: underline;
+}
+
+.main-nav a:active {
+    color: rgb(255, 203, 120, 0.7);
+    text-decoration: underline;
+}
+
+
+
+.main-inscription {
+    max-width: 600px;
+
+    font-family: "Arial", sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 70px;
+    color: #ffffff;
+
+    text-align: center;
+    
+    margin: 128px auto 0;
+    
+}
+
