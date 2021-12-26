@@ -228,6 +228,8 @@ p {
     vertical-align: top;
     padding: 10px;
     vertical-align: top;
+
+    cursor: pointer;
 }
 
 .btn-discover {
@@ -542,3 +544,133 @@ p {
 .price-list__price {
     text-align: right;
 }
+
+.order-section {
+    background-color: #ffcb78;
+}
+
+.order-section__wrapper {
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 85px;
+    padding-bottom: 110px;
+}
+
+.order-section__wrapper h2 {
+    margin-bottom: 80px;
+}
+
+.order-section__tip {
+    margin-bottom: 78px;
+}
+.order-form {
+    width: 630px;
+    display: flex;
+    flex-direction: column;
+}
+
+.order-form__group {
+    margin-bottom: 26px;
+}
+
+.order-form__group label {
+    display: inline-block;
+    text-transform: uppercase;
+    line-height: 20px;
+    padding-bottom: 12px;
+}
+
+.order-form__group input[type="text"],
+.order-form__group select,
+.order-form__group textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    background-color: #e5b66c;
+    border: 0px;
+    padding: 15px;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.order-form__group input[type="text"]:hover,
+.order-form__group select:hover,
+.order-form__group textarea:hover {
+    background-color: #d9ad66;
+}
+
+.order-form__group input[type="text"]:focus,
+.order-form__group select:focus,
+.order-form__group textarea:focus {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.order-form__group select {
+    color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.order-form__phone-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-form__phone {
+    width: 290px;
+}
+
+.order-form__group textarea {
+    display: block;
+    min-height: 120px;
+    text-transform: none;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:after {
+    content: " ";
+    background-color: #e5b66c;
+    display: inline-block;
+    position: absolute;
+    width: 35px;
+    height: 35px; 
+    top:-17.5px;
+    margin-right: 20px;
+    left: -5px;
+}
+
+input[type=checkbox]:checked:after {
+    box-sizing: border-box;
+    content: "✓";
+    font-size: 30px;
+    text-align: center;
+    line-height: 35px;
+   }
+
+.order-form__checkbox label {
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+.btn_order {
+    width: 200px;
+    border: 0px;
+    background-color: #834700;
+    color: #ffffff;
+    padding: 18px;
+}
+
+.btn_order:hover {
+    background-color: #6a3900;
+}
+
+.btn_order:active {
+    color:rgba(255, 255, 255, 0.3)

@@ -193,47 +193,49 @@
         </table>
       </section>
 
-      <div class="order-form">
-        <h2>Заказать</h2>
-        <p class="order-tip">Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите 
-          настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.</p>
-        <form class="order-form" action="/order-mail" method="post">
-          <div class="order-form-group">
-            <label for="fullname">Представьтесь:</label>
-            <input type="text" name="fullname" id="fullname">
+      <section class="order-section">
+        <div class="order-section__wrapper">
+          <h2>Заказать</h2>
+          <p class="order-section__tip">Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены! Закажите 
+            настоящий крафтовый квас сейчас. При заказе от 10 баррелей — скидка 10%.</p>
+          <form class="order-form" action="/order-mail" method="post">
+            <div class="order-form__group">
+              <label for="fullname">Представьтесь:</label>
+              <input type="text" name="fullname" id="fullname">
+          </div>
+          <div class="order-form__phone-wrapper">
+            <div class="order-form__group order-form__phone">
+              <label for="phone">Номер телефона:</label>
+              <input type="text" name="phone" id="phone">
+            </div>
+            <div class="order-form__group order-form__phone">
+              <label for="additional-phone">Доп. номер:</label>
+              <input type="text" name="additional-phone" id="additional-phone">
+            </div>
+          </div>  
+          <div class="order-form__group">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+          </div>
+          <div class="order-form__group">
+            <label for="order-volume">Объём заказа:</label><br>
+            <select name="order-volume" id="order-volume">
+              <option value="1">От 5 до 10 баррелей в неделю</option>
+              <option value="2">От 10 до 15 баррелей в неделю</option>
+            </select>
+          </div>
+          <div class="order-form__group">
+            <label for="message">Доп. комментарий:</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <div class="order-form__group order-form__checkbox">
+            <input type="checkbox" name="subscription" id="subscription" checked>
+            <label>Я согласен получать квасную рассылку</label> 
+          </div>
+          <input class="btn btn_order" type="submit" value="Отправить заказ">
+          </form>
         </div>
-        <div class="order-form-group">
-          <label for="phone">Номер телефона:</label>
-          <input type="text" name="phone" id="phone">
-        </div>
-        <div class="order-form-group">
-          <label for="additional-phone">Доп. номер:</label>
-          <input type="text" name="additional-phone" id="additional-phone">
-        </div>
-        <div class="order-form-group">
-          <label for="email">Email:</label>
-          <input type="text" name="email" id="email">
-        </div>
-        <div class="order-form-group">
-          <label for="order-volume">Объём заказа:</label><br>
-          <select name="order-volume" id="order-volume">
-            <option value="1">От 5 до 10 баррелей в неделю</option>
-          </select>
-        </div>
-        <div class="order-form-group">
-          <label for="message">Доп. комментарий:</label>
-          <textarea name="message" id="message">
-          </textarea>
-        </div>
-        <div class="order-form-group">
-          <label>
-          <input type="checkbox" name="subscription" checked>
-          Я согласен получать квасную рассылку
-          </label>
-        </div>
-        <input class="btn" type="submit" value="Отправить заказ">
-        </form>
-      </div>
+      </section>
 
       <div clss="page-footer">
         <div class="footer-top">
