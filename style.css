@@ -84,8 +84,8 @@ p {
     justify-content: space-between;
     align-items: center;
 
-    border-top: 1px solid rgb(141, 110, 59, 0.8);
-    border-bottom: 1px solid rgb(141, 110, 59, 0.8);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .main-nav li {
@@ -551,6 +551,7 @@ p {
 
 .order-section__wrapper {
     width: 800px;
+
     margin: 0 auto;
     padding-top: 85px;
     padding-bottom: 110px;
@@ -565,6 +566,7 @@ p {
 }
 .order-form {
     width: 630px;
+
     display: flex;
     flex-direction: column;
 }
@@ -575,8 +577,10 @@ p {
 
 .order-form__group label {
     display: inline-block;
+
     text-transform: uppercase;
     line-height: 20px;
+
     padding-bottom: 12px;
 }
 
@@ -584,11 +588,16 @@ p {
 .order-form__group select,
 .order-form__group textarea {
     box-sizing: border-box;
+
     width: 100%;
     height: 50px;
+
     background-color: #e5b66c;
+
     border: 0px;
+
     padding: 15px;
+
     font-family: "Arial", sans-serif;
     font-size: 16px;
     text-transform: uppercase;
@@ -625,7 +634,9 @@ p {
 
 .order-form__group textarea {
     display: block;
+
     min-height: 120px;
+
     text-transform: none;
     font-size: 16px;
 }
@@ -637,19 +648,25 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:after {
     content: " ";
+
     background-color: #e5b66c;
+
     display: inline-block;
+
     position: absolute;
+    top:-17.5px;
+    left: -5px;
+    margin-right: 20px;
+
     width: 35px;
     height: 35px; 
-    top:-17.5px;
-    margin-right: 20px;
-    left: -5px;
 }
 
 input[type=checkbox]:checked:after {
     box-sizing: border-box;
+
     content: "✓";
+
     font-size: 30px;
     text-align: center;
     line-height: 35px;
@@ -662,9 +679,12 @@ input[type=checkbox]:checked:after {
 
 .btn_order {
     width: 200px;
+
     border: 0px;
+
     background-color: #834700;
     color: #ffffff;
+
     padding: 18px;
 }
 
@@ -673,4 +693,109 @@ input[type=checkbox]:checked:after {
 }
 
 .btn_order:active {
-    color:rgba(255, 255, 255, 0.3)
+    color:rgba(255, 255, 255, 0.3);
+}
+
+.page-footer {
+    background-color: #000000;
+}
+
+.footer-top {
+    width: 800px;
+    
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    padding-top: 60px;
+}
+    
+.footer-logo img {
+    width: 140px;
+    height: 76px;
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 45px 90px;
+}
+
+.copyright-notice {
+    width: 200px;
+
+    font-size: 14px;
+    line-height: 20px;
+    color: #989898;
+}
+
+.footer-social {
+    display: flex;
+    font-size: 0;
+}
+
+.social-btn, 
+.footer-copyright_icon {
+    display: inline-block;
+
+    box-sizing: border-box;
+
+    width: 68px;
+    height: 68px;
+
+    background-color: #1b1b1b;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border: 2px solid #322d24;
+}
+
+.social-btn:not(:last-child) {
+    border-right: 0px;
+} 
+
+.social-btn:hover, 
+.footer-copyright_icon:hover {
+    background-color: rgba(97, 81, 56, 0.8);
+}
+
+.social-btn:active, 
+.footer-copyright_icon:active {
+    opacity: 0.5;
+}
+
+.social-btn_inst {
+    background-image: url("./img/icon-insta.png");
+}
+
+.social-btn_fb  {
+    background-image: url("./img/icon-fb.png");
+}
+
+.social-btn_vk {
+    background-image: url("./img/icon-vk.png");
+}
+
+.footer-copyright_icon {
+    background-image: url("./img/htmlacademy.png");
+
+    margin-right: 30px;
+}
+
+.footer-copyright {
+    display: flex;
+    align-items: center;
+
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    color: #989898;
+}
+
+.footer-copyright a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 400;
+}
+
